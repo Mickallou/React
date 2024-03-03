@@ -12,6 +12,32 @@
   gap: 15px;
 }
 
+h3 {
+  text-align: center;
+}
+
+.theTable {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+
 footer {
   position: fixed;
   bottom: 0;
