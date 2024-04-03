@@ -1,0 +1,22 @@
+.PropsTomer {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px black;
+    width: 80%;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-indent: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: none;
+}

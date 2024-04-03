@@ -1,0 +1,75 @@
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 25px;
+    ;
+
+}
+
+.loginPage h1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.loginPage table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.loginPage table tr {
+    margin-bottom: 10px;
+}
+
+.loginPage table tr:last-child {
+    margin-bottom: 0;
+}
+
+.loginPage table tr td {
+    padding: 10px;
+}
+
+.loginPage table tr td input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.loginPage table tr td button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.loginPage table tr td button:hover {
+    background-color: #ddd;
+}
+
+.status {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.theLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    gap: 20px;
+}

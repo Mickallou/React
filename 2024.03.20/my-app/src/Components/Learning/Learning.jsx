@@ -10,6 +10,7 @@ import PersonalDetailPropsObjFC from './PersonalDetail/PersonalDetailPropsObjFC'
 import ThreeClocks from './Clock/ThreeClocks'
 import EventHandlingFC from './Event/EventHandlingFC'
 import EventHandlingCC from './Event/EventHandlingCC'
+import Counter from './Counter/Counter'
 
 const Learning = () => {
     return (
@@ -37,6 +38,8 @@ const Learning = () => {
             <EventHandlingFC />
 
             <EventHandlingCC />
+
+            <Counter />
         </div>
     )
 }

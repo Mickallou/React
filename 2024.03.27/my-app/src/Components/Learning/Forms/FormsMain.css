@@ -1,0 +1,59 @@
+.ProductNew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+}
+
+.ProductNew form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ProductNew form input {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.ProductNew form button {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.ProductNew form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.ProductNew td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.error {
+    text-decoration: underline;
+}
+
+.success {
+    font-weight: bold;
+}
