@@ -1,35 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Product from '../../../Models/Product';
+import useProductForm from '../../../Hooks/useProductForm';
 
 const ProductNew = ({ setProducts }) => {
-    const [product, setProduct] = useState(new Product('', '', 0, 0));
-    const [errors, setErrors] = useState({});
+    // const [product, setProduct] = useState(new Product('', '', 0, 0));
+    // const [errors, setErrors] = useState({});
 
-    const handleChange = (e) => {
-        // Create a new instance of Product and update the field
-        const updatedProduct = new Product(product.id, product.pName, product.price, product.quantity);
+    // const handleChange = (e) => {
+    //     // Create a new instance of Product and update the field
+    //     const updatedProduct = new Product(product.id, product.pName, product.price, product.quantity);
 
-        // Update the field that has changed
-        updatedProduct.updateField(e.target.name, e.target.value);
+    //     // Update the field that has changed
+    //     updatedProduct.updateField(e.target.name, e.target.value);
 
-        // Use the state setter to update the state
-        setProduct(updatedProduct);
-    };
+    //     // Use the state setter to update the state
+    //     setProduct(updatedProduct);
+    // };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const errorsVal = product.validate();
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     const errorsVal = product.validate();
 
-        if (Object.keys(errorsVal).length === 0) {
-            alert("Product has been saved successfully");
+    //     if (Object.keys(errorsVal).length === 0) {
+    //         alert("Product has been saved successfully");
 
-            const currProduct = new Product(product.id, product.pName, product.price, product.quantity);
-            currProduct.generateUID();
-            setProduct(currProduct);
-        } else {
-            setErrors(errorsVal);
-        }
-    };
+    //         const currProduct = new Product(product.id, product.pName, product.price, product.quantity);
+    //         currProduct.generateUID();
+    //         setProduct(currProduct);
+    //     } else {
+    //         setErrors(errorsVal);
+    //     }
+    // };
+
+    const [product, errors, handleChange, handleSubmit] = useProductForm(new Product('', '', 0, 0));
 
     useEffect(() => {
         if (Object.keys(errors).length > 0) {
